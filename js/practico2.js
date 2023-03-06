@@ -250,3 +250,34 @@ if(parseInt(cont) && (parseInt(cont)<=50)){
 }
 else alert("no ingreso un numero o es un numero muy alto D:");
 */
+
+// Punto 9
+/*
+for(let i = 1; i!=501; i++){
+    if( (i%4)==0 ){
+        document.write(i," (Es multiplo de 4)<br>");
+        if( (i%5)==0 ) document.write(i,"<br>--------------------<br>");
+    } 
+    else if( (i%9)==0 ){
+        document.write(i," (Es multiplo de 9)<br>");
+        if( (i%5)==0 ) document.write(i,"<br>--------------------<br>");
+    }
+    else if( (i%5)==0 ) document.write(i,"<br>--------------------<br>");
+    else document.write(i,"<br>")
+}
+*/
+
+//Punto 10
+/*
+let filas = prompt("Ingrese el numero de filas");
+let columnas = prompt("Ingrese el numero de columnas");
+let elemento = filas*columnas;
+for(let i = 0; i<filas; i++){
+    for(let x = 0; x< columnas; x++){
+        document.write(elemento);
+        elemento--;
+    }
+    document.write("<br>");
+}
+*/
+
