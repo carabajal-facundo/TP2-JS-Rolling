@@ -274,10 +274,99 @@ let columnas = prompt("Ingrese el numero de columnas");
 let elemento = filas*columnas;
 for(let i = 0; i<filas; i++){
     for(let x = 0; x< columnas; x++){
-        document.write(elemento);
+        document.write(elemento,"  ");
         elemento--;
     }
     document.write("<br>");
 }
 */
 
+// Punto 11
+/*
+let persona1 = [prompt("ingrese el nombre"), prompt("ingrese la edad")];
+let persona2 = [prompt("ingrese el nombre"), prompt("ingrese la edad")];
+let persona3 = [prompt("ingrese el nombre"), prompt("ingrese la edad")];
+
+if(persona1[1]>persona2[1]){
+    if(persona1[1]>persona3[1]) alert(persona1[0]+" es el mayor de los 3");
+    else alert(persona3[0]+" es el mayor de los 3");
+}
+else if(persona2[1]>persona3[1]) alert(persona2[0]+" es el mayor de los 3");
+else alert(persona3[0]+" es el mayor de los 3");
+*/
+
+// Punto 12
+
+//document.write(parseInt(Math.random() * (99 - 1) + 1));
+
+// Punto 13
+/*
+let frase = prompt("Ingrese una frase o palabra");
+alert(frase.toUpperCase());
+*/
+
+// Punto 14
+/*
+let frase = prompt("Ingrese una palabra o frase");
+let convert = '';
+for(let i = 0; i< frase.length;i++){
+    if(i==0){
+        convert = frase.charAt(0)+'-';
+    }
+    else if(i==(frase.length-1)){
+        convert = convert + frase.charAt(i);
+    }
+    else convert = convert + frase.charAt(i)+'-';
+}
+alert(convert);
+*/
+
+// Punto 15
+/*
+let frase = prompt("Ingrese una palabra o frase");
+let cont = 0;
+for(let i = 0; i < frase.length; i++){
+    if( frase.charAt(i)=='a' || frase.charAt(i)=='e' ||frase.charAt(i)=='i' ||
+    frase.charAt(i)=='o' ||frase.charAt(i)=='u' ) cont++;
+    else if( frase.charAt(i)=='A' || frase.charAt(i)=='E' ||frase.charAt(i)=='I' ||
+    frase.charAt(i)=='O' ||frase.charAt(i)=='U' ) cont++;
+}
+alert("El numero de vocales que tiene es: "+cont);
+*/
+
+// Punto 16
+/*
+let frase = prompt("Ingrese una palabra o frase");
+let invert='';
+let cont = frase.length;
+while(cont != -1){
+    invert = invert + frase.charAt(cont);
+    cont--;
+}
+alert(invert);
+*/
+
+// Punto 17
+/*
+let frase = prompt("Ingrese una palabra o frase");
+let cont = 0;
+let vocal = false;
+let posicion = 0;
+for(let i = 0; i < frase.length; i++){
+    if( frase.charAt(i)=='a' || frase.charAt(i)=='e' ||frase.charAt(i)=='i' ||
+    frase.charAt(i)=='o' ||frase.charAt(i)=='u' ){
+        if(!vocal){
+            vocal = true;
+            cont=i+1;
+        }
+    }
+    else if( frase.charAt(i)=='A' || frase.charAt(i)=='E' ||frase.charAt(i)=='I' ||
+    frase.charAt(i)=='O' ||frase.charAt(i)=='U' ){
+        if(!vocal){
+            vocal = true;
+            cont=i+1;
+        }
+    }
+}
+alert("La primera vocal esta en la posicion: "+cont);
+*/
